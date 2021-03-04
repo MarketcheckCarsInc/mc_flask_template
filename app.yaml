@@ -1,0 +1,32 @@
+runtime: python
+env: flex
+
+runtime_config:
+    python_version: 3
+
+service: demo-svc
+
+entrypoint: gunicorn  -c gunicorn.conf.py --bind :$PORT --timeout 120 --log-level=debug app:application 
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 20
+  cpu_utilization:
+    target_utilization: 0.6
+
+resources:
+  cpu: 1
+  memory_gb: 3
+  disk_size_gb: 10
+
+env_variables:
+  ENV: "DEV"
+  GCP_PROJECT: ""
+  BT_INSTANCE: ""
+  BT_MAPPING: "<refer ex:>" # ex: {'price': 'p', 'miles': 'mi'}
+  BT_TABLE_NAME: '<table name>'
+  BT_ROW_KEYS: '<comma separated>'
+  LOGLEVEL: "DEBUG"
+
+network:
+  instance_tag: <TAG-NAME>
