@@ -32,3 +32,6 @@ LICENSE
 README.md
 pytest.ini
 .vscode/
+
+credentials/
+temp/

@@ -1,0 +1,28 @@
+swagger: "2.0"
+info:
+  title: Demo API
+  description: API description in Markdown.
+  version: 1.0.0
+host: localhost:8080
+basePath: /api/v1
+schemes:
+  - https
+paths:
+  /demo/1:
+    get:
+      summary: Prints out "Hi!!"
+      description: Optional extended description in Markdown.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+  /demo/2:
+    get:
+      summary: Reads data from GCP Bigtable and prints out resonse in json. More details refer README.md
+      description: Optional extended description in Markdown.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK

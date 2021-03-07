@@ -16,7 +16,8 @@ logger = logging.getLogger(__name__)
 logging.basicConfig(format="%(name)s %(process)d/%(threadName)s:%(message)s", level=LOGLEVEL)
 
 
-# When rnnig locall set the below env vars in a .env file with GOOGLE_APPLICATION_CREDENTIALS for bigtable
+# When running locally set the below env vars in a .env file (same level as main.py) with GOOGLE_APPLICATION_CREDENTIALS for bigtable
+# ex: GOOGLE_APPLICATION_CREDENTIALS = "credentials/credential.json"   (credentials folder same level as main.py)
 load_dotenv(find_dotenv())
    
 
@@ -70,7 +71,7 @@ class DemoBigTableGet(Resource):
                                 bt_dict[key] = cell.value.decode('utf-8')
                     bt_array.append(bt_dict)
         except BaseException as error:
-            logging.error('An exception occurred - DemoExample::get(): {}'.format(error))
+            logging.error('An exception occurred - DemoBigTableGet::get(): {}'.format(error))
 
         print(bt_array)
 
@@ -97,3 +98,5 @@ class DemoServiceHealth(Resource):
     def post(self):
         return json.dumps({'Healthy':True}), 200, {'ContentType':'application/json'} 
 
+
+#DemoBigTableGet().get()

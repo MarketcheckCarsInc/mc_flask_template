@@ -1,8 +1,6 @@
 Flask
 flask-restful
-redis-py-cluster
-pandas
-mcdm
 gunicorn
 gevent
 google-cloud-bigtable
+flask-swagger-ui
