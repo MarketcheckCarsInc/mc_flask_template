@@ -3,6 +3,7 @@ import gevent
 #More info on gunicorn: 
 #1: https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7
 #2: https://stackoverflow.com/questions/38425620/gunicorn-workers-and-threads
+#3: https://www.fullstackpython.com/green-unicorn-gunicorn.html
 
 #workers = multiprocessing.cpu_count() * 2 + 1
 workers = 1
