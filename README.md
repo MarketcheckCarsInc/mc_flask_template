@@ -21,7 +21,7 @@
  - pip install -r requirements-dev.txt
  - gunicorn app:application --reload
  - https://localhost:8080/api/v1/demo1/1
- - https://localhost:8080/api/v1/demo1/1
+ - https://localhost:8080/api/v1/demo1/2
  - https://localhost:8080/api/v1/docs
 
 # Deploy to App Engine
