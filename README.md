@@ -3,7 +3,7 @@
 - Python 3+
 - virtualenv  
 
-## Frist time, create virtual env
+## First time, create virtual env
  - virtualenv mft
  - source mft/bin/activate
 
