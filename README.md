@@ -1,17 +1,35 @@
-# app-engine-flex-python-rest-template
-Prerequisite: 
+# Python flask template for Google App Engine
+
+## Prerequisite: 
 - Python 3+
-- install virtualenv  
-virtualenv venv
-source venv/bin/activate
+- virtualenv  
 
-##test
-pip install -r requirements-test.txt 
-python3 -m pytest tests -v
+## Features
+- Flask Restful and Blueprint 
+- Flask swagger UI
+- Pytest
 
-##local run 
-pip install -r requirements-dev.txt
-gunicorn app:application --reload
+## First time, create virtual env, after cloning /checkout of code.
+ - virtualenv mft
+ - source mft/bin/activate
+
+## test
+ - pip install -r requirements-test.txt 
+ - python -m pytest tests -v
+
+## local run 
+ - pip install -r requirements-dev.txt
+ - gunicorn app:application --reload
+ - https://localhost:8080/api/v1/demo1/1
+ - https://localhost:8080/api/v1/demo1/2
+   - Add below env vars in a .env file (same level as main.py)
+     - GCP_PROJECT = ""
+     - BT_INSTANCE = ""
+     - BT_MAPPING  =  <>  ex: "{'price': 'p', 'miles': 'mi'}"
+     - BT_TABLE_NAME = ""
+     - BT_ROW_KEYS = ""
+     - GOOGLE_APPLICATION_CREDENTIALS = "credentials/credential.json" (same level as main.py)
+ - https://localhost:8080/api/v1/docs
 
 # Deploy to App Engine
-gcloud app deploy
+ - gcloud app deploy
