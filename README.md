@@ -1,17 +1,22 @@
 # app-engine-flex-python-rest-template
-Prerequisite: 
+## Prerequisite: 
 - Python 3+
-- install virtualenv  
-virtualenv venv
-source venv/bin/activate
+- virtualenv  
 
-##test
-pip install -r requirements-test.txt 
-python3 -m pytest tests -v
+## Frist time, create virtual env
+ - virtualenv mft
+ - source mft/bin/activate
 
-##local run 
-pip install -r requirements-dev.txt
-gunicorn app:application --reload
+## test
+ - pip install -r requirements-test.txt 
+ - python -m pytest tests -v
+
+## local run 
+ - pip install -r requirements-dev.txt
+ - gunicorn app:application --reload
+ - https://localhost:8080/api/v1/demo1/1
+ - https://localhost:8080/api/v1/demo1/1
+ - https://localhost:8080/api/v1/docs
 
 # Deploy to App Engine
-gcloud app deploy
+ - gcloud app deploy
