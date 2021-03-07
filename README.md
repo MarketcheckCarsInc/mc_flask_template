@@ -10,8 +10,8 @@
 - Pytest
 
 ## First time, create virtual env, after cloning /checkout of code.
- - virtualenv mft
- - source mft/bin/activate
+ - virtualenv venv
+ - source venv/bin/activate
 
 ## test
  - pip install -r requirements-test.txt 
@@ -33,3 +33,4 @@
 
 # Deploy to App Engine
  - gcloud app deploy
+   - update app.yaml with vars and network tag
