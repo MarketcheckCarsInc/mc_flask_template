@@ -1,4 +1,4 @@
-# Python flask templat for Google App Engine
+# Python flask template for Google App Engine
 
 ## Prerequisite: 
 - Python 3+
@@ -9,7 +9,7 @@
 - Flask swagger UI
 - Pytest
 
-## First time, create virtual env
+## First time, create virtual env, after cloning /checkout of code.
  - virtualenv mft
  - source mft/bin/activate
 
