@@ -22,6 +22,13 @@
  - gunicorn app:application --reload
  - https://localhost:8080/api/v1/demo1/1
  - https://localhost:8080/api/v1/demo1/2
+  - Add below env vrs in a .env file (same level as main.py)
+   - GCP_PROJECT = ""
+   - BT_INSTANCE = ""
+   - BT_MAPPING  =  <>  ex: "{'price': 'p', 'miles': 'mi'}"
+   - BT_TABLE_NAME = ""
+   - BT_ROW_KEYS = ""
+   - GOOGLE_APPLICATION_CREDENTIALS = "credentials/credential.json" (same level as main.py)
  - https://localhost:8080/api/v1/docs
 
 # Deploy to App Engine
