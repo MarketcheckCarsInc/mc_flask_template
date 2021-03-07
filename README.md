@@ -22,7 +22,7 @@
  - gunicorn app:application --reload
  - https://localhost:8080/api/v1/demo1/1
  - https://localhost:8080/api/v1/demo1/2
-   - Add below env vrs in a .env file (same level as main.py)
+   - Add below env vars in a .env file (same level as main.py)
      - GCP_PROJECT = ""
      - BT_INSTANCE = ""
      - BT_MAPPING  =  <>  ex: "{'price': 'p', 'miles': 'mi'}"
