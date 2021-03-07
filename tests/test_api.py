@@ -9,7 +9,7 @@ import pytest
 import ast
 
 from app import create_app
-from app.api.demoService import DemoHellWorld
+from app.api.demoService import DemoHelloWorld
 
 
 

@@ -31,7 +31,7 @@ client = bigtable.Client(project=project_name)
 instance = client.instance(instance_name)
 
 
-class DemoHellWorld(Resource):
+class DemoHelloWorld(Resource):
     def get (self):
         return json.dumps({'message':'Hi !!'}), 200, {'ContentType':'application/json'} 
 
