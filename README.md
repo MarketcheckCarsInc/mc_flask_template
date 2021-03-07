@@ -1,7 +1,13 @@
-# app-engine-flex-python-rest-template
+# Python flask templat for Google App Engine
+
 ## Prerequisite: 
 - Python 3+
 - virtualenv  
+
+## Features
+- Flask Restful and Blueprint 
+- Flask swagger UI
+- Pytest
 
 ## First time, create virtual env
  - virtualenv mft
