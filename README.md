@@ -34,3 +34,6 @@
 # Deploy to App Engine
  - gcloud app deploy
    - update app.yaml with vars and network tag
+
+
+Join the discussion @[Marketcheck forums](https://forums.marketcheck.com/) 
